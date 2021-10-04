@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.input {
+  margin: 2rem auto;
+  padding: 2rem 1rem 1rem 1rem; 
+  width: 90%;
+  max-width: 40rem;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+  position: absolute;
+  left: 1rem;
+  top: 1.2rem;
+  padding: 0 0.5rem;
+  color: #c5c6c7;
+  cursor: text;
+  background-color: #1f2833;
+  transition: top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
+}
+
+.form-input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #c5c6c7;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    color: #c5c6c7;
+    outline: none;
+    background: none;
+    padding: 1.25rem;
+    box-shadow: none;
+}
+
+.form-input:hover, .form-input:focus {
+  border-color: #66fcf1;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~.form-label {
+    font-size: 0.8rem;
+    top: -0.5rem;
+    left: 0.8rem;
+    color: #66fcf1;
+} 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
